@@ -2,6 +2,8 @@
 
 # Analysis of the Clinical Indicators for Mpox Infection in the UK
 
+![alt text](Screenshot_mpox.png)
+
 ## Overview
 Mpox (formerly referred to as monkeypox) is an infectious disease typically characterised by a rash and influenza-like symptoms. It is caused by the monkeypox virus, which can affect both humans and certain animal species. Initial symptoms include fever, headache, myalgia, lymphadenopathy, and fatigue. Although the overall risk of contracting Mpox in the UK remains low, several outbreaks have been reported in specific regions since 2022. This project examines the 2022 UK Mpox outbreak, which commenced on 6 May 2022 in London. The first confirmed case involved a British resident who had recently travelled to Nigeria—where the disease is endemic—and returned on 4 May, serving as the index case for this outbreak. 
 
@@ -203,6 +205,8 @@ I performed ML modelling for two specific reasons:
 ### 5 – Power BI Dashboard Development  
 Built an interactive dashboard using produced charts and KPIs:
 
+![alt text](Power_BI_Dashboard/Dashboard_screenshot.png)
+
 Given the dataset only had binary categorical variables, the dashbaord has the following visualizations: 
 
 #### Pie Chart
@@ -299,12 +303,6 @@ AI Tools:
 - Document ethics and governance considerations.
 - Prepared README with all completed sections.
 
-In future, with more time and appropriate data, the following would be important to explore:
-
-- Conduct hyperparameter optimisations
-- GridsearchCV to find right model
-- Get more data to improve model performance
-
 ## Deployment
 
 - This project does not use Heroku as the final dashboard was built in Power BI and uploaded in repo. 
@@ -320,15 +318,43 @@ These were the primary tools used for data cleaning, transformation, analysis, a
 - plotly (planned for EDA) — Interactive visualisations for deeper exploration.
 - Power BI — Interactive dashboard creation and presentation of insights.
 
+## Conclusions
+
+The main findings from this analysis are:
+1. That the test positivity of 2022 Mpox outbreak was very high at 64 percent. In the future, the adequancy of the testing would need to be reviewed and improves as necessary.
+2. While no significant relationship was found between Mpox test results and most of the clinical features, further analysis through logistic modelling shows that most of the clinical features increased the likelihood of a positive Mpox test
+3. The Mpox ML model has further pinpointed that HIV infection, Rectal Pain, Fever, and STIs as the most important clinical features in predicting Mpox test results.
+
+## Future Improvements
+
+In future, with more time and appropriate data, the following would be important to explore:
+
+- Conduct hyperparameter optimisations
+- GridsearchCV to find right model - Combine multiple algorithms for improved performance
+- Get more data to improve model performance
+- In the ML, Deep Learning Models: Neural networks for complex pattern recognition
+
+## Final Reflection
+
+- This capstone project facilitated the advancement of my technical abilities in data science and machine learning, while also enhancing my understanding of the complexity and responsibility inherent in healthcare analytics.
+- This work showcases my ability to make a valuable difference in data-driven healthcare as a junior data analyst, blending strong technical skills with a real commitment to improving patient outcomes.
+- Looking ahead in my data science career, I am dedicated to applying my skills to create positive change, especially in healthcare, where data science has the potential to make a direct difference in people’s lives.
+
+
 ## Credits
 
 Content:
 
 - Dataset: Kaggle – Diabetes Health Indicators- https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 - Code Institute tutor guidance
-- AI assistance:
-- ChatGPT — for project planning, code explanation, documentation drafting, and workflow structuring.
-- GitHub Copilot — for code suggestions, code refinement, optimisation, and syntax completion during development.
+- Code Institute LMS. Data Analytics with Artificial Intelligence Bootcamp Curriculum. Code Institute Ltd
+- AI assistance: Co-Pilot 
+- ChatGPT — for project planning, code explanation, documentation drafting, and workflow structuring
+- GitHub Copilot — for code suggestions, code refinement, optimisation, and syntax completion during development
+- ower BI - ULTIMATE Power BI Tutorial Beginner to Pro Course (2024) https://www.youtube.com/watch?v=Dk25lwdTKow&t=2256s
+- Make a Power BI Dashboard in 15 Minutes! https://www.youtube.com/watch?v=NISsW-bVAwU
+- Code Academy - Markdown Tables https://www.codecademy.com/resources/docs/markdown/tables
+- Markdown Live Preview - https://markdownlivepreview.com/
 
 ## Media:
 
