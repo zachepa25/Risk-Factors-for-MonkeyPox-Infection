@@ -61,20 +61,92 @@ The analyses were driven by the following hypothesis:
 **Alternative**: Having HIV infection or STIs is significantly associated with Mpox diagnosis.
 **Validation procedure:** Build a 2×2 contingency table (`pd.crosstab`), run Chi-square, record p-value and effect size.
 
+#### What did i find?
+
+- There is insufficient evidence to reject a null hypothesis. There is no significant association between having an HIV infection or STIs and Mpox diagnosis.
+
+```js
+Chi-square test for HIV Infection vs MonkeyPox:
+Chi2 Statistic: 533.6958762438375, p-value: 4.435025614165891e-118
+
+Chi-square test for Sexually Transmitted Infection vs MonkeyPox:
+Chi2 Statistic: 380.028262287027, p-value: 1.2268969903563724e-84
+```
+
 ### Hypothesis 2
 **Null**: There is no significant association between rectal pain, sore throat, penile oedema, oral lesions, solitary lesion or swollen tonsils and Mpox diagnosis.
 **Alternative**: Having rectal pain, sore throat, penile oedema, oral lesions, solitary lesion or swollen tonsils is significantly associated with Mpox diagnosis.
 **Validation procedure:** Build a 2×2 contingency table (`pd.crosstab`), run Chi-square, record p-value and effect size.
+
+#### What did I find?
+
+- Insufficient evidence to reject a null hupothesis. There is no significant association between systemic illness, rectal pain, sore throat, penile oedema, oral lesions or solitary lesion and Mpox diagnosis.
+
+```js
+Chi-square test for Solitary Lesion vs MonkeyPox:
+Chi2 Statistic: 34.94706665962249, p-value: 3.38791411460228e-09
+
+Chi-square test for Oral Lesions vs MonkeyPox:
+Chi2 Statistic: 67.26697985273577, p-value: 2.3711975473141775e-16
+
+Chi-square test for Penile Oedema vs MonkeyPox:
+Chi2 Statistic: 95.54987650703023, p-value: 1.442118438462757e-22
+
+Chi-square test for Sore Throat vs MonkeyPox:
+Chi2 Statistic: 100.17850932207872, p-value: 1.3926240122068867e-23
+
+Chi-square test for Rectal Pain vs MonkeyPox:
+Chi2 Statistic: 494.51442414581163, p-value: 1.4843418683896628e-109
+```
+
+- Hypothesis 2: There is sufficient evidence to reject the null hypothesis that there is no significant association between swollen tonsils and Mpox diagnosis, p-value < 0.05
+
+```js
+Chi-square test for Swollen Tonsils vs MonkeyPox:
+Chi2 Statistic: 4.315230405742069, p-value: 0.037772655452152144
+```
 
 ### Hypothesis 3
 **Null**: Having an HIV infection or STIs does not significantly increase the likelihood of testing positive to Mpox.
 **Alternative**: Having HIV infection or STIs significantly increases the likelihood of testing positive to Mpox.
 **Validation procedure:** Build a logistic regression models to examine the relationship, compute coeffiecients and Odd ratio; record p-value and effect size.
 
+#### What did I find?
+
+- There is sufficient evidence to reject the null hypothesis. Rectal Pain, Sore Throat, Penile Oedema, Oral Lesions, Solitary Lesion, Swollen Tonsils, HIV Infection, Sexually Transmitted Infection, Fever, and Swollen Nodes significantly increase the likelihood of testing positive to Mpox. However, Having muscle aches was not a significant factor.
+
+```js
+Features                            2.5%     97.5% Odd Ratio
+const                           0.239989  0.290525  0.264051
+Rectal Pain                     1.792845  2.002385  1.894721
+Sore Throat                     1.279147  1.427844  1.351452
+Penile Oedema                   1.256998  1.403017  1.328002
+Oral Lesions                    1.217136  1.358604  1.285926
+Solitary Lesion                 1.125075  1.255681  1.188585
+Swollen Tonsils                 1.018454  1.136640  1.075925
+HIV Infection                   1.862129  2.079792  1.967953
+Sexually Transmitted Infection  1.693049  1.890814  1.789201
+Fever                           2.564307  3.000190  2.773700
+Swollen Nodes                   2.356677  2.755009  2.548071
+Muscle Aches                    0.878524  1.017955  0.945673
+```
+
 ### Hypothesis 4
 **Null**: Rectal pain, sore throat, fever, swollen nodes, muscle aches, penile oedema, oral lesions, solitary lesion or swollen tonsils are not significant indicators or predictors of Mpox infection.
 **Alternative**: Rectal pain, sore throat, fever, swollen nodes, muscle aches, penile oedema, oral lesions, solitary lesion or swollen tonsils are significant indicators or predictors of Mpox infection.
 **Validation procedure:** Build a logistic regression models to examine the relationship, compute coeffiecients and Odd ratio; record p-value and effect size. In addtion, develop an ML predictor model and extract important features.
+
+#### What did I find?
+- After fitting the ML model and evaluating it's performance, only five features were important predictors of Mpox Infection. 
+
+```js
+Feature  Importance
+4                   Swollen Nodes    0.286799
+1                   HIV Infection    0.206491
+0                     Rectal Pain    0.182951
+3                           Fever    0.175476
+2  Sexually Transmitted Infection    0.148283
+```
 
 ## Project Plan
 
@@ -176,8 +248,9 @@ Given the dataset only had binary categorical variables, the dashbaord has the f
 - Only categorical data available meant I could not perform certain analysis or produce certain charts
 
 AI Tools:
-* Used AI assistance to generate code explanations, improve markdown documentation, and plan project structure.
-
+- Used AI assistance to generate code explanations, improve markdown documentation, and plan project structure.
+- Used AI to fix bugs
+  
 ## Ethical Considerations
 ### 1) Data privacy & governance
 - **Source & identifiability:** This project uses a publicly available, de-identified from Kaggle.No direct personal identifiers are included.  
@@ -232,11 +305,11 @@ In future, with more time and appropriate data, the following would be important
 - GridsearchCV to find right model
 - Get more data to improve model performance
 
-# Deployment
+## Deployment
 
 - This project does not use Heroku as the final dashboard was built in Power BI and uploaded in repo. 
 
-# Main Data Analysis Libraries
+## Main Data Analysis Libraries
 
 These were the primary tools used for data cleaning, transformation, analysis, and modelling:
 - pandas — Data loading, cleaning, transformation, and manipulation.
