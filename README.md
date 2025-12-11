@@ -321,9 +321,20 @@ These were the primary tools used for data cleaning, transformation, analysis, a
 ## Conclusions
 
 The main findings from this analysis are:
-1. That the test positivity of 2022 Mpox outbreak was very high at 64 percent. In the future, the adequancy of the testing would need to be reviewed and improves as necessary.
-2. While no significant relationship was found between Mpox test results and most of the clinical features, further analysis through logistic modelling shows that most of the clinical features increased the likelihood of a positive Mpox test
-3. The Mpox ML model has further pinpointed that HIV infection, Rectal Pain, Fever, and STIs as the most important clinical features in predicting Mpox test results.
+- That the test positivity of 2022 Mpox outbreak was very high at 64 percent. In the future, the adequancy of the testing would need to be reviewed and improves as necessary.
+- While no significant relationship was found between Mpox test results and most of the clinical features, further analysis through logistic modelling shows that most of the clinical features increased the likelihood of a positive Mpox test
+- The Mpox ML model has further pinpointed that HIV infection, Rectal Pain, Fever, and STIs as the most important clinical features in predicting Mpox test results.
+
+Through this project, I have achieved many learning outcomes, including:
+
+- Data Collection & Quality Management: Professional dataset handling and preprocessing
+- Exploratory Data Analysis: Statistical analysis with chi-square testing and effect size calculation
+- Machine Learning Implementation
+- Data Visualization: Interactive dashboards and professional statistical charts
+- Business Communication: Technical findings translated to healthcare insights
+- Model Evaluation: Comprehensive performance assessment with clinical validation
+- Project Documentation: Industry-standard technical documentation
+- Deployment: Interactive Power BI deployed and saved in github
 
 ## Future Improvements
 
@@ -340,13 +351,9 @@ In future, with more time and appropriate data, the following would be important
 - This work showcases my ability to make a valuable difference in data-driven healthcare as a junior data analyst, blending strong technical skills with a real commitment to improving patient outcomes.
 - Looking ahead in my data science career, I am dedicated to applying my skills to create positive change, especially in healthcare, where data science has the potential to make a direct difference in people’s lives.
 
-
 ## Credits
 
-Content:
-
-- Dataset: Kaggle – Diabetes Health Indicators- https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
-- Code Institute tutor guidance
+- Special thanks to tutors, peers, and Code Institute resources for feedback and support.
 - Code Institute LMS. Data Analytics with Artificial Intelligence Bootcamp Curriculum. Code Institute Ltd
 - AI assistance: Co-Pilot 
 - ChatGPT — for project planning, code explanation, documentation drafting, and workflow structuring
@@ -355,12 +362,3 @@ Content:
 - Make a Power BI Dashboard in 15 Minutes! https://www.youtube.com/watch?v=NISsW-bVAwU
 - Code Academy - Markdown Tables https://www.codecademy.com/resources/docs/markdown/tables
 - Markdown Live Preview - https://markdownlivepreview.com/
-
-## Media:
-
-All visuals created in Python or Tableau during project development.
-
-## Acknowledgements:
-
-Special thanks to tutors, peers, and Code Institute resources for feedback and support.
-
