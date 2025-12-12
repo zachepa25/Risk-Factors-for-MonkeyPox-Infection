@@ -257,10 +257,10 @@ AI Tools:
   
 ## Ethical Considerations
 ### 1) Data privacy & governance
-- **Source & identifiability:** This project uses a publicly available, de-identified from Kaggle.No direct personal identifiers are included.  
+- **Source & identifiability:** This project uses a publicly available acquired from Kaggle. No direct personal identifiers are included.  
 - **Data minimisation:** Only fields necessary for analysis were retained; derived/aggregated outputs are shared (e.g., charts, summary CSVs).  
 - **Repository:** No sensitive credentials or private data are stored in the repo. Large raw files are avoided; only the cleaned dataset required for reproducibility is included.  
-- **GDPR mindset (good practice):** Although data are de-identified, we follow the principles of **lawfulness, fairness, transparency**, **data minimisation**, **storage limitation**, and **integrity/confidentiality**.
+- **GDPR mindset (good practice):** Although data are de-identified, I followed the principles of **lawfulness, fairness, transparency**, **data minimisation**, **storage limitation**, and **integrity/confidentiality**.
 
 ### 2) Bias, fairness & representativeness
 - **Sampling bias:** This was a synthetic dataset. So, representation issues may not arise also given that sample characteristics were not included.  
@@ -303,9 +303,9 @@ AI Tools:
 - Document ethics and governance considerations.
 - Prepared README with all completed sections.
 
-## Deployment
+## Dashboard Deployment
 
-- This project does not use Heroku as the final dashboard was built in Power BI and uploaded in repo. 
+- This project does not use Heroku as the final dashboard was built in Power BI and uploaded in repo. The final Dashboard is named "Mpox Dashboard.pbix" and can be found in the folder named "Power_BI_Dashboard".
 
 ## Main Data Analysis Libraries
 
