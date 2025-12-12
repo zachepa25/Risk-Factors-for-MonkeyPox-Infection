@@ -251,9 +251,11 @@ Given the dataset only had binary categorical variables, the dashbaord has the f
 - Lack of personal attributes like age, gender, education, residential area, etc limit data exploration for predictors
 - Only categorical data available meant I could not perform certain analysis or produce certain charts
 
-AI Tools:
+## Use of AI tools
+I have leveraged AI in three distinct ways:
 - Used AI assistance to generate code explanations, improve markdown documentation, and plan project structure.
-- Used AI to fix bugs
+- Used AI to fix bugs in VS Code or through Copilot app
+- Used machine learning to create a prediction model
   
 ## Ethical Considerations
 ### 1) Data privacy & governance
@@ -293,6 +295,11 @@ AI Tools:
 - **Power BI:** Categorical variables only works when you add them to both x and y axis values. Not sure why, it took me time to figure out this trick.
 - **Python in Power BI:** I attempted to plot sns charts in Power BI that cannot be done in Power BI. However, the distributions were different to the ones in jupyter notebooks. After several attemptS, I abandoned the idea and developed all charts using Power BI functions. 
 - **Mobile responsiveness:** Some visuals in Power BI may require scrolling or lose detail on smaller devices.
+- Copilot AI stopped providing suggested codes in VS Code. Tries many attempts, including searching on internet, but no solution worked.
+- I could not create interactive plots using plotly because I was getting the  error message below. However, my nbformat is 5.10. Reinstalling and restarting did not resolve the issue.
+  ```js
+  Mime type rendering requires nbformat>=4.2.0 but it is not installed
+  ``` 
 
 ## Development Roadmap
   
